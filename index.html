@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Lumberback Idle</title>
-  <script type="module" crossorigin src="./assets/index-CW3WnTl0.js"></script>
+  <script type="module" crossorigin src="./assets/index-B50-SXKr.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-s65ggLTH.css">
 </head>
 <body>
@@ -23,6 +23,9 @@
   <div class="lb-label">Loading…</div>
 </div>
 </div>
+<!-- Island travel (28 Oct): hard zone swap reloads into the target island — show a plain travel card, not the splash art -->
+<style>#lb-splash.lb-travel{background:#1d3a4a}#lb-splash.lb-travel picture,#lb-splash.lb-travel .lb-title,#lb-splash.lb-travel .lb-barwrap{display:none}#lb-splash .lb-travel-label{color:#fff;text-shadow:0 2px #00000059;place-items:center;font:800 20px/1.2 system-ui,sans-serif;display:grid;position:absolute;inset:0}</style>
+<script>try{var lbT=sessionStorage.getItem('lb-travel');if(lbT==='1'||lbT==='2'){var lbS=document.getElementById('lb-splash');lbS.classList.add('lb-travel');var lbL=document.createElement('div');lbL.className='lb-travel-label';lbL.textContent=lbT==='2'?'Hardwood Ridge · Island 2':'Island 1';lbS.appendChild(lbL);}}catch(e){}</script>
 
   <div id="hud">
     <div class="pill cash"><span class="ico" aria-hidden="true"></span><span id="cash">0</span></div>
